@@ -45,7 +45,7 @@ class ImageStats(object):
 
 
 def main():
-    """main() returns the image stats based on the method you choose."""
+    """main() prints the image stats based on the method you choose."""
 
     parser = argparse.ArgumentParser(usage=__doc__)
     parser.add_argument("url")
