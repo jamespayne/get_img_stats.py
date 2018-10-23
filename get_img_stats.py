@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
 """Find the height of an online image with different libraries and methods.
-Benchmark the results based on the server where the resource is.
+Benchmark the results based on connection speed and the server where the
+resorce is located.
 
 Example: `python img_stats.py http://somedomain.com 1`
 
@@ -16,19 +17,19 @@ manually atm.
 import argparse
 import time
 
-__author__ = "Jimmy Payne"
+__author__ = "James Payne AKA Jimmy Payne"
 
 class ImageStats(object):
     """ImageStats object which returns the stats of an online image relevant
-    to where you downloaded it from. Currently only reports image Height
-    and time to load."""
+    to your connection and where you downloaded it from. Currently only reports
+    image Height and time to load."""
 
     def __init__(self, url):
         self.url = url
 
     def method(self, method):
-        """ImageStats.method() returns the image stats and a benchmark
-        time from the relevant server"""
+        """ImageStats.method() chooses which method to use when getting the
+        stats and returns the results for printing."""
 
         if method == 1:
             """See https://stackoverflow.com/a/12020866"""
@@ -37,10 +38,10 @@ class ImageStats(object):
             import requests
             start_time = time.time()
             response = requests.get(self.url)
-            img_height = Image.open(StringIO(response.content)).size[1]
-            end_time = time.time() - start_time
-            return "Image Height: " + str(img_height) + "px", \
-                   "Execution time: " + str(end_time) + " seconds"
+            img_height = str(Image.open(StringIO(response.content)).size[1])
+            end_time = str(time.time() - start_time)
+            return "Image Height: " + img_height + "px", \
+                   "Execution time: " + end_time + " seconds"
 
 
 def main():
