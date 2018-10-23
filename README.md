@@ -4,9 +4,11 @@ Find the height of an online image with different libraries and methods.
 Benchmark the results based on connection speed and the server where the
 resource is located.
 
-This is a project I started because I wanted to understand how an image was downloaded from a URI and what data we can gather even before downloading the image.
+This is a project I started because I wanted to understand how an image was downloaded from a URI.
 
 Example: `python img_stats.py http://somedomain.com/img.jpg 1`
+
+Bad Cases (where the whole image is downloaded causing a significant overhead):
 
 1. Using Pillow, StringIO and requests libraries.
 See https://stackoverflow.com/a/25350894
