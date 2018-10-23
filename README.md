@@ -8,7 +8,11 @@ This is a project I started because I wanted to understand how an image was down
 
 Example: `python img_stats.py http://somedomain.com/img.jpg 1`
 
-Bad Cases (where the whole image is downloaded causing a significant overhead):
+**Good Cases**
+
+Hopefully coming soon
+
+**Bad Cases** (where the whole image needs to be downloaded causing a significant overhead):
 
 1. Using Pillow, StringIO and requests libraries.
 See https://stackoverflow.com/a/25350894
