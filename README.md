@@ -2,7 +2,7 @@
 
 Find the height of an online image with different libraries and methods.
 Benchmark the results based on connection speed and the server where the
-resorce is located.
+resource is located.
 
 Example: `python img_stats.py http://somedomain.com/img.jpg 1`
 
