@@ -22,7 +22,7 @@ __author__ = "James Payne AKA Jimmy Payne"
 class ImageStats(object):
     """ImageStats object which returns the stats of an online image relevant
     to your connection and where you downloaded it from. Currently only reports
-    image Height and time to load."""
+    image height and time to load."""
 
     def __init__(self, url):
         self.url = url
