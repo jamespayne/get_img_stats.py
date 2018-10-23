@@ -10,7 +10,7 @@ Example: `python img_stats.py http://somedomain.com/img.jpg 1`
 
 **Good Cases**
 
-Hopefully coming soon
+Hopefully coming soon...
 
 **Bad Cases** (where the whole image needs to be downloaded causing a significant overhead):
 
