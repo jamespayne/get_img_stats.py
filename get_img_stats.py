@@ -17,8 +17,6 @@ manually atm.
 import argparse
 import time
 
-__author__ = "James Payne AKA Jimmy Payne"
-
 class ImageStats(object):
     """ImageStats object which returns the stats of an online image relevant
     to your connection and where you downloaded it from. Currently only reports
